@@ -1,0 +1,16 @@
+version: '3'
+services:
+    notcoin-frontend:
+        build: .
+        image: notcoin-frontend
+        restart: always
+        expose:
+            - 8108
+        ports:
+            - 8108:8108
+        networks:
+             backend-forward:
+networks:
+    backend-forward:
+      name: backend-forward
+      external: true

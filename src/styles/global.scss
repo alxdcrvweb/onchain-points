@@ -1,0 +1,32 @@
+._flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333333;
+  //border-radius: 5px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: #101010;
+  position: relative;
+  &:focus {
+    outline: none;
+  }
+}
+
+.checkbox{
+  display: flex;
+  align-items: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background: black;
+  border: 1px solid #333333;
+  &.checked {
+    background: #333333;
+  }
+}

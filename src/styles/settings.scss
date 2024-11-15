@@ -1,0 +1,40 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https://vuetifyjs.com/features/sass-variables/`
+// @use 'vuetify/settings' with (
+//   $color-pack: false
+// );
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+    src:
+        local('Poppins'),
+        url('/fonts/Poppins/Poppins.woff2') format('woff2'),
+        url('/fonts/Poppins/Poppins.woff') format('woff');
+}
+@font-face {
+    font-family: 'HelveticaNeueLight';
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+    src:
+        local('HelveticaNeueLight'),
+        url('/fonts/HelveticaNeueLight/HelveticaNeueLight.woff2') format('woff2'),
+        url('/fonts/HelveticaNeueLight/HelveticaNeueLight.woff') format('woff');
+}
+@font-face {
+    font-family: 'HelveticaNeueMedium';
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+    src:
+        local('HelveticaNeueMedium'),
+        url('/fonts/HelveticaNeueMedium/HelveticaNeueMedium.woff2') format('woff2'),
+        url('/fonts/HelveticaNeueMedium/HelveticaNeueMedium.woff') format('woff');
+}
