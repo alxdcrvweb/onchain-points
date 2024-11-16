@@ -226,10 +226,10 @@ export default {
                     setTimeout(() => {
                         opacity.value = 1
                     }, 500)
-                    if (getStage.value !== 4) {
-                        profileStore.setStage(4)
+                    // if (getStage.value !== 4) {
+                    //     profileStore.setStage(4)
 
-                    }
+                    // }
                 }
 
             }
