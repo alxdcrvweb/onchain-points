@@ -1,12 +1,12 @@
 <template>
-    <squad />
+    <banger />
 </template>
 
 <script lang="ts">
 import { useUserStore } from '@/store/app';
 import WebApp from '@twa-dev/sdk';
 import { storeToRefs } from 'pinia';
-import squad from '@/components/squad/squad.vue'
+import banger from '@/components/onchain-game/banger.vue'
 export default {
     setup() {
         const userStore = useUserStore();
@@ -26,6 +26,6 @@ export default {
             WebApp.showAlert(text);
         }
     },
-    components: { squad }
+    components: { banger }
 };
 </script>

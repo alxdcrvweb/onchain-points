@@ -7,41 +7,12 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router';
 import index from '../pages/index.vue';
-import top from '../pages/top.vue';
-import topByLeague from '../pages/topInd.vue';
-import squad from '../pages/squad.vue';
-import boost from '../pages/boost.vue';
-import boost2 from '../pages/boost2.vue';
-import referralVue from '@/pages/referral.vue';
+import firstGame from '../pages/firstGame.vue';
+import banger from '@/pages/banger.vue';
 const routes = [
-    {
-        path: '/',
-        name: 'index',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: index
-    },
-    {
-        path: '/top',
-        name: 'League',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: topByLeague
-    },
-    {
-        path: '/squad',
-        name: 'squad',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: squad
-    },
-    { path: '/league', name: 'league', component: topByLeague },
-    { path: '/boost', name: 'boost', component: boost },
-    { path: '/boost2', name: 'boost2', component: boost2 },
-  { path: '/referral', name: 'referral', component: referralVue },
+    { path: '/', name: 'index', component: index },
+    { path: '/firstGame', name: 'firstGame', component: firstGame },
+    { path: '/banger', name: 'banger', component: banger }
 ];
 const router = createRouter({
     history: createWebHistory(),

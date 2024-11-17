@@ -7,6 +7,7 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Banger: typeof import('./src/components/onchain-game/banger.vue')['default']
     BlockContainer: typeof import('./src/components/layouts/BlockContainer.vue')['default']
     Boost: typeof import('./src/components/boost/boost.vue')['default']
     BoostRocket: typeof import('./src/components/main/BoostRocket.vue')['default']
@@ -17,10 +18,13 @@ declare module 'vue' {
     ErrorNotification: typeof import('./src/components/utilityScreens/ErrorNotification.vue')['default']
     ErrorScreen: typeof import('./src/components/utilityScreens/ErrorScreen.vue')['default']
     FeatureDisabled: typeof import('./src/components/utilityScreens/FeatureDisabled.vue')['default']
+    FirstGame: typeof import('./src/components/onchain-game/firstGame.vue')['default']
     FirstSlide: typeof import('./src/components/preview/firstSlide.vue')['default']
     Footer: typeof import('./src/components/top/footer.vue')['default']
     FourthSlide: typeof import('./src/components/preview/fourthSlide.vue')['default']
     FullPage: typeof import('./src/components/layouts/FullPage.vue')['default']
+    Game: typeof import('./src/components/onchain-game/game.vue')['default']
+    GameCard: typeof import('./src/components/onchain-game/gameCard.vue')['default']
     Gem: typeof import('./src/components/main/gem.vue')['default']
     GemMenu: typeof import('./src/components/main/gemMenu.vue')['default']
     GridFour: typeof import('./src/components/layouts/GridFour.vue')['default']
@@ -35,6 +39,7 @@ declare module 'vue' {
     Referral: typeof import('./src/components/referral/referral.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Screen1: typeof import('./src/components/onchain-game/screen1.vue')['default']
     SecondSlide: typeof import('./src/components/preview/secondSlide.vue')['default']
     ServiceWorks: typeof import('./src/components/utilityScreens/ServiceWorks.vue')['default']
     SocketFrame: typeof import('./src/components/main/socketFrame.vue')['default']

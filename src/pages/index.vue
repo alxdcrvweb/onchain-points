@@ -1,12 +1,12 @@
 <template>
-    <so />
+    <gameCard />
 </template>
 
 <script lang="ts">
 import { useUserStore } from '@/store/app';
 import WebApp from '@twa-dev/sdk';
 import { storeToRefs } from 'pinia';
-import so from '@/components/main/socketFrame.vue'
+import gameCard from '@/components/onchain-game/gameCard.vue'
 export default {
     setup() {
         const userStore = useUserStore();
@@ -26,6 +26,6 @@ export default {
             WebApp.showAlert(text);
         }
     },
-    components: { so }
+    components: { gameCard }
 };
 </script>

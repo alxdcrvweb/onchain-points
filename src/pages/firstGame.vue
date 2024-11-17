@@ -1,12 +1,12 @@
 <template>
-    <referral />
+    <firstGame />
 </template>
 
 <script lang="ts">
 import { useUserStore } from '@/store/app';
 import WebApp from '@twa-dev/sdk';
 import { storeToRefs } from 'pinia';
-import referral from '@/components/referral/referral.vue'
+import firstGame from '@/components/onchain-game/firstGame.vue'
 export default {
     setup() {
         const userStore = useUserStore();
@@ -26,6 +26,6 @@ export default {
             WebApp.showAlert(text);
         }
     },
-    components: { referral }
+    components: { firstGame }
 };
 </script>

@@ -2,14 +2,9 @@
     <div class="container">
         <div>
             <section class="welcome-card">
-                <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/9a63818aa80a7fdcac9f1d05b2c4271cabf950775a141c70427b4ab1ba0d3aad?placeholderIfAbsent=true&apiKey=2c86edb590ef47c3b40bb8bea5c66e15"
-                    class="welcome-image"
-                    alt="Welcome illustration"
-                />
+                <img loading="lazy" src="/new.png" class="welcome-image" alt="Welcome illustration" />
                 <div class="welcome-content">
-                    <h1 class="welcome-title">Welcome to the new <span>onchain era</span></h1>
+                    <p class="welcome-title">Welcome to the new <span>onchain era</span></p>
                     <p class="welcome-description">
                         The Chain Game is being transformed
                         <br />to better serve the community and support promising projects.
@@ -23,13 +18,8 @@
                 <div className="unactive"></div>
                 <div className="unactive"></div>
             </div>
-            <div
-                class="content-wrapper"
-                :style="{
-                    opacity: `${opacity}`
-                }"
-            >
-                <div class="continue-button" @click="() => changeStage(1)">CONTINUE</div>
+            <div class="content-wrapper">
+                <div class="continue-button" @click="() => changeStage(1)">OK</div>
                 <!-- <div class="bottom-indicator"></div> -->
             </div>
         </div>
@@ -75,6 +65,7 @@ export default {
     width: 100vw;
     height: 100vh;
     top: 25px;
+    padding: 20px;
     left: 0;
     padding-top: 32px;
     flex-direction: column;
@@ -237,6 +228,6 @@ export default {
     font:
         14px/143% Poppins,
         sans-serif;
-    margin-bottom: 75px;
+    margin-bottom: 24px;
 }
 </style>

@@ -1,31 +1,20 @@
 <template>
     <div class="container">
-
         <div>
-            <div class="stages">
-                <div class="active"></div>
-                <div class="active"></div>
-                <div class="active"></div>
-                <div class="active"></div>
-            </div>
-            <div class="welcome-section">
-
-
+            <section class="welcome-card2">
+                <img loading="lazy" src="/grow.png" class="welcome-image" alt="Welcome illustration" />
+                <div class="welcome-content">
+                    <p class="welcome-title">Ready?</p>
+                    <p class="welcome-description">Get the most of what onchain can offer!</p>
+                </div>
+            </section>
+        </div>
+        <div>
+            <div class="content-wrapper">
+                <div class="continue-button" @click="() => changeStage(4)">Let’s go!</div>
+                <!-- <div class="bottom-indicator"></div> -->
             </div>
         </div>
-        <img loading="lazy" src="../../assets/welcome.png" class="icon2" :style="{
-            'opacity': `${opacity}`
-        }" />
-        <div><img class="chain-main" src="../../assets/chains-1.png" :style="{
-            'opacity': `${opacity}`
-        }" /></div>
-        <div class="content-wrapper" :style="{
-            'opacity': `${opacity}`
-        }">
-            <div class="continue-button" v-on:click="() => changeStage(4)">PLAY</div>
-            <!-- <div class="bottom-indicator"></div> -->
-        </div>
-
     </div>
 </template>
 
@@ -33,7 +22,7 @@
 import { useProfileStore } from '@/store/profile';
 import { storeToRefs } from 'pinia';
 import { ref } from 'vue';
-const opacity = ref(0)
+const opacity = ref(0);
 export default {
     name: 'fourthSlide',
     data(props) {
@@ -46,66 +35,32 @@ export default {
     },
     methods: {
         changeStage(stage) {
-            this.profileStore.setStage(stage)
+            this.profileStore.setStage(stage);
         }
     },
     mounted() {
         setTimeout(() => {
-            opacity.value = 1
-        }, 700)
-    },
+            opacity.value = 1;
+        }, 700);
+    }
 };
 </script>
 
 <style scoped>
-.message {
-    width: 100%;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    background: linear-gradient(94deg,
-            rgba(255, 255, 255, 0.4) -1.07%,
-            #fff 32.18%,
-            rgba(255, 255, 255, 0.4) 104.41%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font: 40px/40px Poppins, sans-serif;
-    max-width: 306px;
-
-
-}
-
-.message div {
-
-    color: rgba(241, 145, 1, 0.7) !important;
-    background: none !important;
-    background-clip: auto !important;
-    -webkit-background-clip: auto !important;
-    -webkit-text-fill-color: rgba(241, 145, 1, 0.7) !important;
-}
-
-.icon2 {
-    width: calc(100% - 40px);
-    margin-top: 30px;
-    backdrop-filter: blur(10px);
-    margin-left: 20px;
-    margin-right: 20px;
-    object-fit: contain;
-    transition: 500ms ease all;
-}
-
-.chain-main {
-    position: absolute;
-    z-index: -1000;
-    top: 30px;
-    transition: 500ms ease all;
-}
-
-.description {
-    max-width: 306px;
-}
-
-.message img {
-    height: 158px;
+.welcome-card2 {
+    border-radius: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(38.349998474121094px);
+    background-image: url(../../../public/cardbg.svg);
+    background-size: auto;
+    display: flex;
+    width: 345px;
+    height: 345px;
+    flex-direction: column;
+    font-family: Manrope, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    background-position: center;
+    padding-top: 40px;
 }
 </style>

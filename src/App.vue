@@ -156,7 +156,7 @@ const loadProfileInfo = async (jwt: string) => {
         <v-main v-else style="background-color: black">
             <div class="app">
                 <router-view />
-                <foot v-if="stage == 4 && footer" />
+                <!-- <foot v-if="stage == 4 && footer" /> -->
                 <ErrorNotification />
             </div>
         </v-main>
@@ -251,7 +251,6 @@ body {
     padding: 20px;
     padding-top: 0px;
     width: 100vw;
-
     font-family: 'Poppins';
     z-index: 1;
 }
