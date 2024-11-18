@@ -56,8 +56,10 @@
     </article>
     <footer class="game-card__footer">
         <p class="footer-text">Complete tasks to gain gems<br />and get an airdrop in the future</p>
-        <button class="view-tasks-btn">View tasks</button>
-        <div class="continue-button" @click="() => changeStage(4)">Let’s go!</div>
+        <RouterLink to="/tasks">
+            <button class="view-tasks-btn">View tasks</button>
+            <div class="continue-button">Let’s go!</div>
+        </RouterLink>
     </footer>
 </template>
 

@@ -1,12 +1,12 @@
 <template>
-    <top />
+    <tasks />
 </template>
 
 <script lang="ts">
 import { useUserStore } from '@/store/app';
 import WebApp from '@twa-dev/sdk';
 import { storeToRefs } from 'pinia';
-import top from '@/components/top/top.vue'
+import tasks from '@/components/onchain-game/tasks.vue';
 export default {
     setup() {
         const userStore = useUserStore();
@@ -26,6 +26,6 @@ export default {
             WebApp.showAlert(text);
         }
     },
-    components: { top }
+    components: { tasks }
 };
 </script>

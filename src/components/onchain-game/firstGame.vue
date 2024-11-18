@@ -5,7 +5,7 @@
                 <button class="back-button" aria-label="Go back">
                     <img loading="lazy" src="/nav.svg" alt="" class="back-icon" style="transform: rotate(180deg)" />
                 </button>
-                <h1 class="game-title">Onchain game 1</h1>
+                <p class="game-title">Onchain game 1</p>
             </header></RouterLink
         >
         <div class="game-image-container">
@@ -32,7 +32,7 @@
     </section>
     <footer class="game-card__footer">
         <RouterLink to="/">
-            <div class="continue-button" @click="() => changeStage(4)">go back</div>
+            <div class="continue-button">go back</div>
         </RouterLink>
     </footer>
 </template>

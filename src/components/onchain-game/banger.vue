@@ -35,7 +35,7 @@
     </article>
     <footer class="game-card__footer">
         <p class="footer-text">Building onchain? <br />You can apply your project here</p>
-        <div class="continue-button" @click="() => changeStage(4)">Apply</div>
+        <div class="continue-button">Apply</div>
     </footer>
 </template>
 

@@ -48,6 +48,7 @@ declare module 'vue' {
     SquadCreate: typeof import('./src/components/squad/squadCreate.vue')['default']
     SquadTable: typeof import('./src/components/squad/SquadTable.vue')['default']
     Table: typeof import('./src/components/top/table.vue')['default']
+    Tasks: typeof import('./src/components/onchain-game/tasks.vue')['default']
     ThirdSlide: typeof import('./src/components/preview/thirdSlide.vue')['default']
     Title: typeof import('./src/components/layouts/Title.vue')['default']
     Top: typeof import('./src/components/top/top.vue')['default']
